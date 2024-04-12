@@ -1,0 +1,221 @@
+/* Resetowanie domyślnych stylów przeglądarek */
+body, h1, h2, h3, p, ul, li, a, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalne style strony */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #545454;
+    color: #333;
+}
+
+/* Nawigacja */
+nav {
+    background-color: #363636;
+    color: #fff;
+    width: 100%;
+}
+
+.navi {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.navi a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navi a p {
+    margin: 0;
+}
+
+.navi a:hover {
+    background-color: #555;
+}
+
+/* Zawartość */
+#zawartosc {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularz dodawania zwierzęcia */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Przyciski Edit, Comment, Del */
+.btn-edit,
+.btn-comment,
+.btn-del {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-comment {
+    background-color: #28a745;
+}
+
+.btn-del {
+    background-color: #dc3545;
+}
+
+/* Zdjęcia */
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+}
+
+.photo-details {
+    max-width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: block;
+}
+
+.photo-details h3 {
+    margin-bottom: 5px;
+}
+
+.photo-details p {
+    margin: 0;
+}
+
+.photo-details a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.photo-details a:hover {
+    text-decoration: underline;
+}
+
+#photo-detailed {
+    max-width:50%;
+    max-height: 600px;
+}
+
+.btn-login {
+    background-color: blue;
+}
+
+.btn-login:hover {
+    background-color: darkblue;
+}
+
+.photo-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo-title {
+    font-weight: bold;
+}
+
+.photo-username {
+    color: lightseagreen;
+    text-align: right;
+    font-weight: bold;
+    font-size: 75%;
+}
